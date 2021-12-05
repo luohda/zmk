@@ -14,7 +14,7 @@
 		compatible = "zmk,keymap";
 		#define home 0
 		#define h_func 1
-
+		#define work 2
 		
 		home {
 // home and h_func is used at home laptop
@@ -45,10 +45,29 @@
 // ------------------------------------------------------------------------------------------------
 			bindings = <
 	&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6   &kp F7    &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &trans
-	&trans  &trans    &trans   &trans  &trans  &trans &trans  &trans  &trans   &trans   &trans   &trans  &trans          &trans 
+	&trans  &trans    &to work   &trans  &trans  &trans &trans  &trans  &trans   &trans   &trans   &trans  &trans          &trans 
 	&trans  &trans  &trans  &trans  &trans &trans  &to home  &trans  &rgb_ug RGB_BRD   &rgb_ug RGB_BRI   &trans   &trans    &trans
 	&rgb_ug RGB_TOG  &trans  &trans  &bt BT_CLR  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI &trans  &kp DEL
 	&bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2    &trans    &trans      &trans      &trans         &trans
+			>;
+		};
+
+
+		work {
+// work is for german layout 
+// ------------------------------------------------------------------------------------------
+// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   CAPS   |
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P |   [   |   ]   |   \  |
+// | BKSP  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
+// |     ALT  |  Z  |  X  |  C  |  V  |   B   |  N  |  M  |   ,  |   .  |   /   |    UP     |
+// |  CTL  |  WIN  |  LSHIFT  |     LT w_func SPACE     | MO (w_cap) |  L  |   down  |  R   |
+// ------------------------------------------------------------------------------------------
+			bindings = <
+	&kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp FLSH &kp LS(N0) &kp CLCK
+	&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp RA(N8)  &kp RA(N9)  &kp RA(MINUS)
+	&kp BSPC  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp LS(COMMA) &kp LS(NON_US_HASH)         &kp RET
+	&kp LALT   &kp Y  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp LS(N7)     &kp UP
+	&kp LCTRL &kp LGUI &kp LSHFT           &lt h_func SPACE         &mo h_func  &kp LEFT &kp DOWN  &kp RIGHT
 			>;
 		};
 
