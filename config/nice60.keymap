@@ -63,10 +63,10 @@
 // |  CTL  |  WIN  |  LSHIFT  |     LT w_func SPACE     | MO (w_cap) |  L  |   down  |  R   |
 // ------------------------------------------------------------------------------------------
 			bindings = <
-	&kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp FLSH &kp LS(N0) &kp CLCK
-	&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp RA(N8)  &kp RA(N9)  &kp RA(MINUS)
-	&kp BSPC  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp LS(COMMA) &kp LS(NON_US_HASH)         &kp RET
-	&kp LALT   &kp Y  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp LS(N7)     &kp UP
+	&kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp FLSH &kp N0 &kp CLCK
+	&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp N8  &kp N9  &kp MINUS
+	&kp BSPC  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp COMMA  &kp NON_US_HASH     &kp RET
+	&kp LALT   &kp Y  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp N7     &kp UP
 	&kp LCTRL &kp LGUI &kp LSHFT           &lt h_func SPACE         &mo h_func  &kp LEFT &kp DOWN  &kp RIGHT
 			>;
 		};
