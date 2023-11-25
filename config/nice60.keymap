@@ -19,20 +19,20 @@
 		#define w_func 4
 		
 		home {
-// home and h_func is used at home laptop
+// home and h_func is used at home ipad
 // ------------------------------------------------------------------------------------------
-// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
+// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   CAPS   |
 // | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P |   [   |   ]   |  "|" |
-// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
-// |    SHIFT  |  Z  |  X  |  C  |  V  |   B   |  N  |  M  |  ,   |  .   |  /   |     UP    |
-// |  CTL  |  WIN  |  ALT  |         LT(h_func)SPACE      |   SHIFT |  L  |   down   |  R   |
+// | BKSP  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
+// |    ALT  |  Z  |  X  |  C  |  V  |   B   |  N  |  M  |  ,   |  .   |  /   |     UP    |
+// |  CMD  |  CTL  |  SHIFT  |         LT(h_func)SPACE      |   SHIFT |  L  |   down   |  R   |
 // ------------------------------------------------------------------------------------------
 			bindings = <
-	&kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL  &kp BSPC
+	&kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL  &kp CLCK
 	&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  &kp BSLH
-	&kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT           &kp RET
-	&kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH      &kp UP
-	&kp LCTRL &kp LGUI &kp LALT          &lt h_func SPACE         &kp RSHFT  &kp LEFT &kp DOWN  &kp RIGHT
+	&kp BSPC  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT           &kp RET
+	&kp LALT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH      &kp UP
+	&kp LGUI  &kp LCTRL &kp LSHFT          &lt h_func SPACE         &kp RSHFT  &kp LEFT &kp DOWN  &kp RIGHT
 			>;
 		};
 
@@ -43,14 +43,14 @@
 // |       |     |TO work |    |     |      |     |    |     |     |     |      |     |       |
 // |         |    |     |      |      |      | TO home |     | BRID  |  BRIUP |    |     |    |
 // | TOG RGB|     |     | BT CLR |     | SATDN | SATUP | EFF  | HUEDN | HUEUP |     |   DEL   |
-// |   BT 3  |  BT 4 |      |                               |      | Vol DOWN | Mute | Vol Up |
+// |   BT 0  |  BT 1 | BT 2 |                                  |      |       |       |       |
 // ------------------------------------------------------------------------------------------------
 			bindings = <
-	&kp LA(GRAVE)  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6   &kp F7    &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &trans
+	&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6   &kp F7    &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &trans
 	&trans  &trans    &to work   &trans  &trans  &trans &trans  &trans  &trans   &trans   &trans   &trans  &trans          &trans 
 	&trans  &trans  &trans  &trans  &trans &trans  &to home  &trans  &rgb_ug RGB_BRD   &rgb_ug RGB_BRI   &trans   &trans    &trans
 	&rgb_ug RGB_TOG  &trans  &trans  &bt BT_CLR  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI &trans  &kp DEL
-	&bt BT_SEL 3  &bt BT_SEL 4   &trans    &trans    &trans      &kp C_VOL_DN      &kp C_MUTE      &kp C_VOL_UP
+	&bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2    &trans    &trans      &trans      &trans         &trans
 			>;
 		};
 
@@ -99,14 +99,14 @@
 // |       |     |TO work |    |     |      |     | Ü  |     |  Ö  |     |      |     |       |
 // |         | Ä  |  ß  |      |      |      | TO home |     | BRID  |  BRIUP |    |     |    |
 // | TOG RGB|     |     | BT CLR |     | SATDN | SATUP | EFF  | HUEDN | HUEUP |     |   DEL   |
-// |   BT 3  |  BT 4 |      |                               |      | Vol DOWN | Mute | Vol Up |
+// |   BT 0  |  BT 1 | BT 2 |                                  |      |       |       |       |
 // ------------------------------------------------------------------------------------------------
 			bindings = <
 	&kp RA(RBKT)  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6   &kp F7    &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &trans
 	&trans  &trans  &to work   &trans  &trans  &trans &trans  &kp LBKT  &trans   &kp SEMI  &trans   &trans  &trans          &trans 
 	&trans  &kp SQT  &kp MINUS  &trans  &trans &trans  &to home  &trans  &rgb_ug RGB_BRD   &rgb_ug RGB_BRI   &trans   &trans    &trans
 	&rgb_ug RGB_TOG  &trans  &trans  &bt BT_CLR  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI &trans  &kp DEL
-	&bt BT_SEL 3  &bt BT_SEL 4   &trans    &trans    &trans     &kp C_VOL_DN      &kp C_MUTE      &kp C_VOL_UP
+	&bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2    &trans    &trans      &trans      &trans         &trans
 			>;
 		};
 	};
