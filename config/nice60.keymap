@@ -43,14 +43,14 @@
 // |       |     |TO work |    |     |      |     |    |     |     |     |      |     |       |
 // |         |    |     |      |      |      | TO home |     | BRID  |  BRIUP |    |     |    |
 // | TOG RGB|     |     | BT CLR |     | SATDN | SATUP | EFF  | HUEDN | HUEUP |     |   DEL   |
-// |   BT 4  |  BT 5 | BT 6 |                                  |    | Vol DOWN | Mute | Vol Up |
+// |   BT 1  |  BT 2 | BT 3 |                                  |    | Vol DOWN | Mute | Vol Up |
 // ------------------------------------------------------------------------------------------------
 			bindings = <
 	&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6   &kp F7    &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &trans
 	&trans  &trans    &to work   &trans  &trans  &trans &trans  &trans  &trans   &trans   &trans   &trans  &trans          &trans 
 	&trans  &trans  &trans  &trans  &trans &trans  &to home  &trans  &rgb_ug RGB_BRD   &rgb_ug RGB_BRI   &trans   &trans    &trans
 	&rgb_ug RGB_TOG  &trans  &trans  &bt BT_CLR  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI &trans  &kp DEL
-	&bt BT_SEL 4  &bt BT_SEL 5   &bt BT_SEL 6    &trans    &trans      &kp C_VOL_DN      &kp C_MUTE         &kp C_VOL_UP
+	&bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3    &trans    &trans      &kp C_VOL_DN      &kp C_MUTE         &kp C_VOL_UP
 			>;
 		};
 
@@ -99,14 +99,14 @@
 // |       |     |TO work |    |     |      |     | Ü  |     |  Ö  |     |      |     |       |
 // |         | Ä  |  ß  |      |      |      | TO home |     | BRID  |  BRIUP |    |     |    |
 // | TOG RGB|     |     | BT CLR |     | SATDN | SATUP | EFF  | HUEDN | HUEUP |     |   DEL   |
-// |   BT 4  |  BT 5 | BT 6 |                                  |     | Vol DOWN | Mute | Vol Up |
+// |   BT 1  |  BT 2 | BT 3 |                                  |     | Vol DOWN | Mute | Vol Up |
 // ------------------------------------------------------------------------------------------------
 			bindings = <
 	&kp RA(RBKT)  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp F6   &kp F7    &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &trans
 	&trans  &trans  &to work   &trans  &trans  &trans &trans  &kp LBKT  &trans   &kp SEMI  &trans   &trans  &trans          &trans 
 	&trans  &kp SQT  &kp MINUS  &trans  &trans &trans  &to home  &trans  &rgb_ug RGB_BRD   &rgb_ug RGB_BRI   &trans   &trans    &trans
 	&rgb_ug RGB_TOG  &trans  &trans  &bt BT_CLR  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI &trans  &kp DEL
-	&bt BT_SEL 4  &bt BT_SEL 5   &bt BT_SEL 6    &trans    &trans      &kp C_VOL_DN      &kp C_MUTE         &kp C_VOL_UP
+	&bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3    &trans    &trans      &kp C_VOL_DN      &kp C_MUTE         &kp C_VOL_UP
 			>;
 		};
 	};
